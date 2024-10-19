@@ -18,14 +18,22 @@ function extractIntegersFromStringAdAdd(inputString) {
         return 0
     }
 
-    // Regex is used with match function to extract integer values
-    const extractedIntegers = inputString.match(/\d+/g) || []
+    // Regex is used with match function to extract integer values with '-' sign if exists
+    const extractedIntegers = inputString.match(/-?\d+/g) || []
     
     let sum = 0
     
     // Looping and adding numbers
     extractedIntegers.forEach(int => {
-        sum += parseInt(int)
+        const num = parseInt(int)
+        
+        // Throing error if any -ve number is found
+        if(num < 0) {
+            throw new Error(`negative numbers not allowed ${num}`)
+        }
+
+        // adding number
+        sum +=num
     })
 
     console.log(sum)
@@ -34,4 +42,4 @@ function extractIntegersFromStringAdAdd(inputString) {
     return sum
 }
 
-extractIntegersFromStringAdAdd('fy89765euyf76r5rtiut6r58igyu87t6rvy6r5')
+extractIntegersFromStringAdAdd('fy89765euyf76r5rtiut6-56r58igyu87t6rvy6r5')
