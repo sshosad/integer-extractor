@@ -67,3 +67,6 @@ function add(inputString) {
 // const INPUT = 'yy33d,d\tdk\nd}{bd7,gjdjd5'
 // add(INPUT)
 
+module.exports = {
+    add
+}
