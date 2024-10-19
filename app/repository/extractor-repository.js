@@ -60,8 +60,10 @@ function add(inputString) {
 
 /**
  * TESTING PURPOUSE
+ * Un-comment line number 66 and 67
  * Here you can changes the input string to execute all test cases
+ * To execute add function with passed STRING, run node app/repository/extractor-repository.js in terminal
  */
-const INPUT = 'yy33d,d\tdk\nd}{bd7,gjdjd5'
-add(INPUT)
+// const INPUT = 'yy33d,d\tdk\nd}{bd7,gjdjd5'
+// add(INPUT)
 
