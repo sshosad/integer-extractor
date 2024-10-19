@@ -36,4 +36,7 @@
     g. Example API request body - { "string": "kjhi89r987867f87r67f" }
     e. Example API response - { sum : 988110 }
 
-
+# AUTOMATED TESTS USING JEST
+    Unit test cases are written using jest framework
+    Test cases are written only for repository function - extractor-repository.test.js
+    To run the test - npm test
