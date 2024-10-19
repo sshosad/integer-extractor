@@ -60,7 +60,7 @@ function add(inputString) {
 
 /**
  * TESTING PURPOUSE
- * Un-comment line number 66 and 67
+ * Un-comment line number 67 and 68
  * Here you can changes the input string to execute all test cases
  * To execute add function with passed STRING, run node app/repository/extractor-repository.js in terminal
  */
